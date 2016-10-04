@@ -39,30 +39,36 @@
         html, body {
             width: 100%;
             min-height: 100%;
-            background-color: #eee;
         }
         .wrapper {
-            margin-top: 3em;
-            background-color: #fff;
-            border-radius: 3px;
-            box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
-            padding: 1em;
+            width: 100%;
         }
-
-        .wrapper > h2 {
-            margin-top: 0;
+        .some-text {
+            text-align: center;
+            background-color: #eee;
+            margin-bottom: 3em;
+        }
+        .no-padding {
+            padding-left: 0;
+            padding-right: 0;
         }
     </style>
 </head>
-<body>
+<body id="rand-color">
 
 <div class="container-fluid">
     <div class="row">
-        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12 col-xs-12">
+        <div class="col-lg-6 col-lg-offset-3 col-md-8 col-md-offset-2 col-sm-12 col-xs-12 no-padding">
             <div class="wrapper">
-                <h2>Zorg ervoor dat je geluid aanstaat!</h2>
-                <h3>(Niet te hard, zeker niet als je in college zit)</h3>
-                <a href="feest.html"><button class="btn btn-danger">Klik dan hier om verder te gaan</button></a>
+                <div class="some-text">
+                    <marquee class="h1" behavior="alternate" direction="left" scrollamount="16">Jaaaaa!</marquee>
+                    <marquee class="h2" behavior="alternate" direction="left">Jurriaan wilt in de
+                        <a href="https://ch.tudelft.nl/vereniging/commissies/wifi-2e-jaars" target="_blank">WiFi</a>!
+                    </marquee>
+                </div>
+                <marquee behavior="scroll" direction="left" scrollamount="25">
+                    <img src="resources/lederhosen.png" class="img-responsive" class="rotating"/>
+                </marquee>
             </div>
         </div>
     </div>
@@ -73,5 +79,10 @@
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/bootstrap.min.js"></script>
 
+<script src="js/script.js"></script>
+
+<audio src="resources/anton.mp3" autoplay="autoplay" loop="loop">
+    Helaas, je kan het prachtige liedje niet luisteren omdat je browser te outdated is.
+</audio>
 </body>
 </html>
