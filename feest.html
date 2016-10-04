@@ -66,11 +66,16 @@
                         <a href="https://ch.tudelft.nl/vereniging/commissies/wifi-2e-jaars" target="_blank">WiFi</a>!
                     </marquee>
                 </div>
-                <audio src="resources/anton_highbitrate.mp3" autoplay="autoplay" loop="loop">
+                <audio autoplay loop id="audio">
+                    <source src="resources/anton.m4a"/>
+                    <source src="resources/anton.ogg"/>
                     <div class="alert alert-info">
                         Er zit een prachtig muziekje in deze site. Hoor je niets? Gebruik een andere browser!
                     </div>
                 </audio>
+                <div class="alert alert-info" id="startPlayDiv" style="display: none;">
+                    Hoor je niets? <a href="#" onclick="startPlaying()">Klik hier!</a>
+                </div>
                 <marquee behavior="scroll" direction="left" scrollamount="25">
                     <img src="resources/lederhosen.png" class="img-responsive" class="rotating"/>
                 </marquee>
